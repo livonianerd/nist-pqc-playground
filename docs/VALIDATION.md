@@ -2,6 +2,7 @@
 
 The repository was validated locally with Node 20.20.0 and npm 10.8.2. The deployment workflow uses Node 24. This record describes local validation; it does not claim a public GitHub Pages deployment exists.
 
+- Clean local Git clone: `npm ci`, `npm test`, and `npm run build` all succeeded without relying on the original working directory’s node_modules.
 - Vitest: 33 passing tests, including all 18 supported algorithm parameter sets.
 - ESLint, Prettier check, strict TypeScript, and Vite production build: passing.
 - Playwright: desktop Chromium and Pixel 7 viewport Chromium flows passing against the production repository base path `/nist-pqc-playground/`.
