@@ -31,7 +31,9 @@ All 18 parameter sets are exposed. SLH-DSA small-signature (`s`) variants can be
 
 ## Screenshots placeholder
 
-The browser test produces desktop and mobile full-page screenshots at `test-results/desktop-introduction.png` and `test-results/mobile-introduction.png`. Add curated copies here when publishing; generated test artifacts are excluded from Git.
+![Desktop introduction](docs/desktop.png)
+
+[View the mobile screenshot](docs/mobile.png). The browser test produces fresh full-page screenshots at `test-results/desktop-introduction.png` and `test-results/mobile-introduction.png`. Replace these publication screenshots as the design evolves; transient test artifacts are excluded from Git.
 
 ## Architecture
 
@@ -118,7 +120,7 @@ Vite reads the Actions-provided `GITHUB_REPOSITORY` (`owner/repository`) to deri
 
 Pinned direct crypto dependency: **`@noble/post-quantum` 0.7.1**, MIT license. Its locked dependencies are `@noble/ciphers` 2.4.0, `@noble/curves` 2.4.0, and `@noble/hashes` 2.4.0, also MIT. AES-GCM, HKDF-SHA-256, and secure random values use the browser. React and React DOM are MIT. Exact versions of all dependencies are recorded in `package-lock.json`.
 
-See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the full runtime license notices distributed in `public/third-party-licenses.txt`. Development dependency licenses are recorded in [DEPENDENCY_LICENSES.md](DEPENDENCY_LICENSES.md). This license review found no incompatibility with releasing this application's source under MIT. The cryptographic library's implementation of a FIPS standard does not mean this application or its modules are FIPS validated. Do not infer that this project has independently audited the library.
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the full runtime license notices distributed in `public/third-party-licenses.txt`. Development dependency licenses are recorded in [DEPENDENCY_LICENSES.md](DEPENDENCY_LICENSES.md). This license review found no incompatibility with releasing this application's source under MIT. The cryptographic library's implementation of a FIPS standard does not mean this application or its modules are FIPS validated. The upstream 0.7.1 README states that the library has not yet been independently audited (it reports a self-audit of 0.6.1). This project has not independently audited it either.
 
 ## Educational Disclaimer
 
